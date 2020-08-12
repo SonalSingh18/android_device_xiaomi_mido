@@ -7,6 +7,9 @@ allow system_app {
     sysfs_leds
 }:file rw_file_perms;
 
+# Battery Health
+r_dir_file(system_app, sysfs_battery_supply);
+
 allow system_app {
     sysfs_leds
     sysfs_torch
