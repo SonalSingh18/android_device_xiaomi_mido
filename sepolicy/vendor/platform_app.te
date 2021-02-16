@@ -1,2 +1,11 @@
 allow platform_app hal_alarm_qti_default:binder call;
 allow platform_app hal_alarm_qti_hwservice:hwservice_manager find;
+
+# FPS Info
+allow platform_app sysfs_fps:file { getattr open read };
+
+# System Info
+allow platform_app sysfs_battery_supply:dir search;
+allow platform_app sysfs_battery_supply:file { getattr open read }; 
+allow platform_app sysfs_kgsl:dir search;
+allow platform_app sysfs_kgsl:file { getattr open read };

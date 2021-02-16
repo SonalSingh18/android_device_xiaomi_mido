@@ -62,3 +62,6 @@
 
 # AC Vibration
 /sys/class/leds/vibrator/vmax_mv    u:object_r:sysfs_vibrator:s0
+
+# FPS Info
+/sys/class/graphics/fb0/measured_fps        u:object_r:sysfs_fps:s0
